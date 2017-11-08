@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import Todos from './Todos';
-import EditTodo from './EditTodo';
 
 class ViewTodos extends Component {
+  constructor(props) {
+    super(props);
+
   render() {
     return (
       <div className='well'>
-        <h3>View Todos</h3>
-        <EditTodo />
+        <h3>Things Todos</h3>
+        {/* <EditTodo /> */}
         <Todos />
       </div>
     );
